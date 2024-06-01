@@ -12,8 +12,8 @@ Visual Studio Code will actually run inside a Docker container with php-cli as w
 Any Extensions will also run in the same container, meaning that intellisense will use the same php-cli configuration!
 
 `laravel-devcontainer` currently ships with:
-- `php:8.0-cli-alpine` workspace with composer, pgsql, redis, and nodejs.
-- `php:8.0-fpm-alpine` container with pgsql and redis extensions.
+- `php:8.2-cli-alpine` workspace with composer, pgsql, redis, and nodejs.
+- `php:8.2-fpm-alpine` container with pgsql and redis extensions.
 - `nginx:1.21-alpine` preconfigured for your Laravel application.
 - `postgres:13-alpine` preconfigured with the default Laravel credentials.
 - `redis:6.2-alpine` for caching, queues, sessions, etc.
@@ -45,8 +45,8 @@ DB_CONNECTION=pgsql
 DB_HOST=postgres
 DB_PORT=5432
 DB_DATABASE=laravel
-DB_USERNAME=root
-DB_PASSWORD=
+DB_USERNAME=laravel
+DB_PASSWORD=laravel
 
 REDIS_HOST=redis
 REDIS_PASSWORD=null
