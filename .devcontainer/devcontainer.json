@@ -3,7 +3,7 @@
     "service": "cli",
     "workspaceFolder": "/workspaces/laravel",
     "dockerComposeFile": "docker-compose.yaml",
-    "forwardPorts": [8000],
+    "forwardPorts": [80],
     "customizations": {
         "vscode": {
             "extensions": [
